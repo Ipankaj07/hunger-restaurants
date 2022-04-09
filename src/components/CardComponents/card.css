@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+.d-flex {
+  display: flex;
+}
+
+.div-container {
+  display: flex;
+}
+
+.filter-container {
+  flex-basis: 25%;
+  background-color: #474747;
+  padding: 1rem;
+  color:white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+}
+
+.main {
+  flex-basis: 75%;
+  background-color: coral;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.card {
+  width: 33rem;
+  height: fit-content;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0.4rem 1rem;
+}
+
+.rd1 {
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.r-d2 {
+  flex: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.r-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+.r-address {
+  font-size: 1.1rem;
+  color: #828282;
+}
+
+.r-costFO {
+  font-size: 1.2rem;
+  color: #828282;
+}
+
+.r-costM {
+  font-size: 1.03rem;
+  color: #474747;
+}
+
+.separator {
+  margin: 0 0.5rem;
+}
+
+.r-time {
+  font-size: 1.03rem;
+  color: #474747;
+}
+
+.r-payment {
+  font-size: 1.3rem;
+  color: #474747;
+  margin-top: 0.3rem;
+}
+
+.r-rate {
+  width: 2.1rem;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: -0.2rem;
+  left: 3rem;
+}
+
+.r-vote {
+  font-size: 1rem;
+  color: #828282;
+}
+
+.r-review {
+  font-size: 1rem;
+  color: #828282;
+}
+
+.c-2 {
+  justify-content: space-between;
+}
+
+.r-d3 div {
+  margin-bottom: 0.3rem;
+  text-align: right;
+}
+
+.c-2 {
+  border-top: 1px solid #ccc;
+  margin-top: 0.8rem;
+}
+
+.r-fav {
+  width: 2rem;
+  height: 2rem;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  border-radius: 6px;
+}
+
+.r-btn {
+  width: 12rem;
+  height: 2rem;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 6px;
+  padding: 1.4rem;
+  cursor: pointer;
+}
+
+.color-save {
+  color: lightcoral;
+}
+.save {
+  position: absolute;
+  top: -0.1rem;
+  left: -0.35rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.arrow_logo {
+  margin-left: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.r-btn:hover .arrow_logo {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.rup-logo {
+  font-size: 0.8rem !important;
+}
+
+/*  */
+
+.f-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fd-1{
+  justify-content: space-between;
+  padding: 0.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.div-filter{
+  border: 1px solid #ccc;
+}
+
+.rating-filter-div{
+  padding: 0.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.payment-filter-div{
+  padding: 0.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.cost-filter-div{
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.r-inp-div{
+padding: 0.3rem;
+display: flex;
+align-items: center;
+}
+
+.r-inp-div input[type="checkbox"]{
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.r-inp-div label{
+  font-size: 1rem;
+}
+
+.p-logo{
+  margin-left: 0.4rem;
+}
+
+.r-inp-text input[type="number"]{
+  border-radius: 6px;
+  padding: 0.255rem;
+  background: #ccc;
+  outline: none;
+  border: none;
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  .rd1 {
+    width: 70vw;
+  }
+
+  .r-rate {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .c-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .r-d3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3rem;
+  }
+
+  .r-rate {
+    position: static !important;
+  }
+}
+
+
