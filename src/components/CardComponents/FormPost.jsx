@@ -35,11 +35,23 @@ function FormPost() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="Rform">
+      <h1
+        style={{
+          backgroundColor: "white",
+          color: "black",
+          padding: "10px",
+          fontSize: "16px",
+          cursor: "pointer",
+          margin: "10px",
+          border: "1px solid black",
+          textAlign: "center",
+        }}
+      >
+       Add Restaurants Form
+      </h1>
 
-     <h1 style={{paddingTop:"2rem", textAlign:"center"}} >Form</h1>
-
-      <div className="row">
+      <div className="row" style={{padding:"1rem"}}>
         <div className="col-md-6">
           <div className="form-group">
             <label htmlFor="name">Name</label>
